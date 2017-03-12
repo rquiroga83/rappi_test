@@ -21,3 +21,9 @@ Route::get('cube/', [
 	'uses' => 'CubeController@create',
    	'as' => 'cube'
 ]);
+
+
+Route::get('cube_result/', [
+	'uses' => 'CubeController@getResult',
+   	'as' => 'cube.result'
+]);
