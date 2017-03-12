@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+
+Route::get('cube/', [
+	'uses' => 'CubeController@create',
+   	'as' => 'cube'
+]);
