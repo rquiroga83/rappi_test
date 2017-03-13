@@ -1,7 +1,5 @@
 
 
-<div class=WordSection1>
-
 <p class=MsoNormal><span class=fontstyle01><span lang=ES>Prueba técnica Rappi –
 Andrés Quiroga</span></span></p>
 
@@ -197,7 +195,6 @@ lang=ES>Se colocó la actualización de la entidad Service en un solo lugar.</sp
 lang=ES>Se eliminó la variable “$return”</span></span></p>
 
 
-</div>
 
 ### Codigo Refactorizado
 
