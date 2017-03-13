@@ -213,6 +213,9 @@ lang=ES>&nbsp;</span></span></p>
 
 </div>
 
+
+
+```php
 public function post_confirm(){
     $id = Input::get('service_id');
     $servicio = Service::find($id);
@@ -255,7 +258,4 @@ public function post_confirm(){
         return Response::json(array('error'=>'3'));
     }
 }
-
-```php
-
 ```
