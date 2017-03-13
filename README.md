@@ -115,7 +115,7 @@ x, y , z son almacenadas como x-1, y-1 y z-1:</span></p>
 
 <p class=MsoNormal align=center style='text-align:center'><img border=0
 width=384 height=265 id="Imagen 9"
-src="Prueba%20técnica%20Rappi_archivos/image008.png"></p>
+src="imagenes/image008.png"></p>
 
 <p class=MsoNormal><span lang=ES>&nbsp;</span></p>
 
