@@ -137,7 +137,7 @@ lang=ES>&nbsp;</span></span></p>
 #### En el código se encuentran los siguientes problemas.
 
 <p class=MsoNormal style='text-align:justify'><span class=fontstyle01><span
-lang=ES>La entidad $servicio es cargada múltiples veces desde base de datos solo
+lang=ES>La entidad "$servicio" es cargada múltiples veces desde base de datos solo
 es necesario cargarla una vez.</span></span></p>
 
 <p class=MsoNormal style='text-align:justify'><span class=fontstyle01><span
@@ -150,11 +150,11 @@ lang=ES>La línea “return Response::json(array('error'=&gt;'0'));” esta repe
 lo que dificulta el seguimiento del error.</span></span></p>
 
 <p class=MsoNormal style='text-align:justify'><span class=fontstyle01><span
-lang=ES>La entidad Service se actualiza múltiples veces esto se puede colocar
+lang=ES>La entidad "Service" se actualiza múltiples veces esto se puede colocar
 en una sola operación.</span></span></p>
 
 <p class=MsoNormal style='text-align:justify'><span class=fontstyle01><span
-lang=ES>La variable servicio es sobrescrita por un update esto genera confusión
+lang=ES>La variable "$servicio" es sobrescrita por un update esto genera confusión
 en el seguimiento del código.</span></span></p>
 
 <p class=MsoNormal style='text-align:justify'><span class=fontstyle01><span
