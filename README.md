@@ -1,11 +1,11 @@
 
 
-<p class=MsoNormal><span class=fontstyle01><span lang=ES>Prueba técnica Rappi –
-Andrés Quiroga</span></span></p>
+#### Prueba técnica Rappi – Andrés Quiroga
 
-<p class=MsoNormal><span class=fontstyle01><span lang=ES>La aplicación se creó
-con en PHP 7.0.2  y Laravel 5.4; se utilizó bootstrap y jQuery en la vista y la
-base de datos utilizada fue MySql.</span></span></p>
+### Desarrollo de codigo
+
+La aplicación se creó con en PHP 7.0.2  y Laravel 5.4; se utilizó bootstrap y jQuery en la vista y la
+base de datos utilizada fue MySql.
 
 <p class=MsoNormal><span class=fontstyle01><span lang=ES>La aplicación tiene
 las 3 capas del modelo vista controlador  </span></span></p>
