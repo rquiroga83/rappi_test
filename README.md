@@ -5,32 +5,27 @@
 ### Desarrollo de codigo
 
 La aplicación se creó con en PHP 7.0.2  y Laravel 5.4; se utilizó bootstrap y jQuery en la vista y la
-base de datos utilizada fue MySql.
+base de datos utilizada fue MySql, aunque la prueba pudo hacerse realizado sin el uso de base de datos
+se creo un tabla para el almacenamiento de la matriz.
 
-<p class=MsoNormal><span class=fontstyle01><span lang=ES>La aplicación tiene
-las 3 capas del modelo vista controlador  </span></span></p>
+La aplicación tiene las 3 capas del modelo vista controlador.
 
-<p class=MsoNormal style='text-align:justify'><span class=fontstyle01><span
-lang=ES>La única vista existente esta creada en la carpeta “resources/view” el
+La única vista existente esta creada en la carpeta “resources/view” el
 archivo se llama cube.blade.php y es una vista de laravel con el motor de
 platillas blade, para el soporte de las operaciones de la vista se creó el
 archivo “public/js/rappi_test.js” la cual contiene todas las operaciones en
-javascript – jQuery y los request Ajax</span></span></p>
+javascript – jQuery y los request Ajax.
 
-<p class=MsoNormal style='text-align:justify'><span class=fontstyle01><span
-lang=ES>El controlador se encuentra en la carpeta
-“app/Http/Controllers/CubeController.php” aca se reciben las operaciones de la
+El controlador se encuentra en la carpeta “app/Http/Controllers/CubeController.php” aca se reciben las operaciones de la
 vista, para la prueba se creó el get de la página y la respuesta a la petición
 Ajax de los resultados. Otra parte de la lógica de negocio se encuentra en la
 clase Query.php  en la carpeta “app/Util” cuya responsabilidad es hacer las
-consultas en base de datos y realizar los cálculos.</span></span></p>
+consultas en base de datos y realizar los cálculos.
 
-<p class=MsoNormal><span class=fontstyle01><span lang=ES>El modelo es una sola
-tabla representada con la clase Cube.php</span></span></p>
+El modelo es una sola tabla representada con la clase "Cube.php"
 
-<p class=MsoNormal><span class=fontstyle01><span lang=ES>Se crearon las
-migraciones para laravel con el objetivo de crear la única tabla que se utiliza
-en la prueba.</span></span></p>
+Se crearon las migraciones para laravel con el objetivo de crear la única tabla que se utiliza
+en la prueba.
 
 <p class=MsoNormal><span class=fontstyle01><span lang=ES>Para ejecutar el proyecto
 se debe configurar el .env con los datos de la conexión y ejecutar las
