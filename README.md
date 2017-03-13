@@ -1,4 +1,3 @@
-
 <html>
 
 <head>
@@ -122,20 +121,6 @@ style='text-decoration:none'>https://github.com/rquiroga83/rappi_test</span></sp
 
 <p class=MsoNormal><span class=fontstyle01><span lang=ES>&nbsp;</span></span></p>
 
-<p class=MsoNormal><span class=fontstyle01><span lang=ES>&nbsp;</span></span></p>
-
-<p class=MsoNormal><span class=fontstyle01><span lang=ES>&nbsp;</span></span></p>
-
-<p class=MsoNormal><span class=fontstyle01><span lang=ES>&nbsp;</span></span></p>
-
-<p class=MsoNormal><span class=fontstyle01><span lang=ES>&nbsp;</span></span></p>
-
-<p class=MsoNormal><span class=fontstyle01><span lang=ES>&nbsp;</span></span></p>
-
-<p class=MsoNormal><span class=fontstyle01><span lang=ES>&nbsp;</span></span></p>
-
-<p class=MsoNormal><span class=fontstyle01><span lang=ES>&nbsp;</span></span></p>
-
 <p class=MsoNormal><span class=fontstyle01><b><span lang=ES>Ejemplo de
 funcionamiento comparado con el test de la página hackerrank:</span></b></span></p>
 
@@ -151,17 +136,27 @@ height=164 id="Imagen 4" src="Prueba%20técnica%20Rappi_archivos/image002.png"><
 width=385 height=426 id="Imagen 1"
 src="Prueba%20técnica%20Rappi_archivos/image003.png"></p>
 
+<p class=MsoNormal align=center style='text-align:center'><u><span lang=ES><span
+ style='text-decoration:none'>&nbsp;</span></span></u></p>
+
 <p class=MsoNormal align=center style='text-align:center'><u><img border=0
-width=393 height=442 id="Imagen 5"
+width=398 height=447 id="Imagen 5"
 src="Prueba%20técnica%20Rappi_archivos/image004.png"></u></p>
 
-<p class=MsoNormal><u><img border=0 width=567 height=768 id="Imagen 6"
+<p class=MsoNormal align=center style='text-align:center'><u><img border=0
+width=399 height=541 id="Imagen 6"
 src="Prueba%20técnica%20Rappi_archivos/image005.png"></u></p>
 
-<p class=MsoNormal><u><img border=0 width=567 height=617 id="Imagen 7"
+<p class=MsoNormal align=center style='text-align:center'><u><img border=0
+width=389 height=423 id="Imagen 7"
 src="Prueba%20técnica%20Rappi_archivos/image006.png"></u></p>
 
-<p class=MsoNormal><span lang=ES>Segunda prueba</span></p>
+<p class=MsoNormal align=center style='text-align:center'><u><span lang=ES><span
+ style='text-decoration:none'>&nbsp;</span></span></u></p>
+
+<p class=MsoNormal><b><span lang=ES>Segunda prueba</span></b></p>
+
+<p class=MsoNormal><b><span lang=ES>&nbsp;</span></b></p>
 
 <p class=MsoNormal align=center style='text-align:center'><img border=0
 width=391 height=542 id="Imagen 8"
@@ -266,6 +261,15 @@ lang=ES>Se colocó la actualización de la entidad Service en un solo lugar.</sp
 
 <p class=MsoNormal style='text-align:justify'><span class=fontstyle01><span
 lang=ES>Se eliminó la variable “$return”</span></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span class=fontstyle01><span
+lang=ES>&nbsp;</span></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span class=fontstyle01><span
+lang=ES>&nbsp;</span></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span class=fontstyle01><span
+lang=ES>&nbsp;</span></span></p>
 
 <p class=MsoNormal style='text-align:justify'><span class=fontstyle01><span
 lang=ES>&nbsp;</span></span></p>
