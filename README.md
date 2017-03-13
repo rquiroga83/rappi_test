@@ -4,62 +4,7 @@
 <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
 <meta name=Generator content="Microsoft Word 14 (filtered)">
 <style>
-<!--
- /* Font Definitions */
- @font-face
-	{font-family:"Cambria Math";
-	panose-1:2 4 5 3 5 4 6 3 2 4;}
-@font-face
-	{font-family:Calibri;
-	panose-1:2 15 5 2 2 2 4 3 2 4;}
-@font-face
-	{font-family:Tahoma;
-	panose-1:2 11 6 4 3 5 4 4 2 4;}
-@font-face
-	{font-family:Corbel;
-	panose-1:2 11 5 3 2 2 4 2 2 4;}
- /* Style Definitions */
- p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:10.0pt;
-	margin-left:0cm;
-	line-height:115%;
-	font-size:11.0pt;
-	font-family:"Calibri","sans-serif";}
-a:link, span.MsoHyperlink
-	{color:blue;
-	text-decoration:underline;}
-a:visited, span.MsoHyperlinkFollowed
-	{color:purple;
-	text-decoration:underline;}
-p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
-	{mso-style-link:"Texto de globo Car";
-	margin:0cm;
-	margin-bottom:.0001pt;
-	font-size:8.0pt;
-	font-family:"Tahoma","sans-serif";}
-span.TextodegloboCar
-	{mso-style-name:"Texto de globo Car";
-	mso-style-link:"Texto de globo";
-	font-family:"Tahoma","sans-serif";}
-span.fontstyle01
-	{mso-style-name:fontstyle01;
-	font-family:"Corbel","sans-serif";
-	color:black;
-	font-weight:normal;
-	font-style:normal;}
-.MsoChpDefault
-	{font-family:"Calibri","sans-serif";}
-.MsoPapDefault
-	{margin-bottom:10.0pt;
-	line-height:115%;}
-@page WordSection1
-	{size:595.3pt 841.9pt;
-	margin:70.85pt 3.0cm 70.85pt 3.0cm;}
-div.WordSection1
-	{page:WordSection1;}
--->
+
 </style>
 
 </head>
@@ -129,7 +74,7 @@ hackerrank</span></span></p>
 
 <p class=MsoNormal><span style='font-size:10.5pt;line-height:115%;background:
 #FAFAFA'><img border=0 width=130 height=183 id="Imagen 3"
-src="Prueba%20técnica%20Rappi_archivos/image001.png"><img border=0 width=148
+src="imagenes/image001.png"><img border=0 width=148
 height=164 id="Imagen 4" src="Prueba%20técnica%20Rappi_archivos/image002.png"></span></p>
 
 <p class=MsoNormal align=center style='text-align:center'><img border=0
