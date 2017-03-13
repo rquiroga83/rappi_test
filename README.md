@@ -196,23 +196,10 @@ lang=ES>Se colocó la actualización de la entidad Service en un solo lugar.</sp
 <p class=MsoNormal style='text-align:justify'><span class=fontstyle01><span
 lang=ES>Se eliminó la variable “$return”</span></span></p>
 
-<p class=MsoNormal style='text-align:justify'><span class=fontstyle01><span
-lang=ES>&nbsp;</span></span></p>
-
-<p class=MsoNormal style='text-align:justify'><span class=fontstyle01><span
-lang=ES>&nbsp;</span></span></p>
-
-<p class=MsoNormal style='text-align:justify'><span class=fontstyle01><span
-lang=ES>&nbsp;</span></span></p>
-
-<p class=MsoNormal style='text-align:justify'><span class=fontstyle01><span
-lang=ES>&nbsp;</span></span></p>
-
-<p class=MsoNormal style='text-align:justify'><span lang=ES style='font-family:
-"Corbel","sans-serif";color:black'>&nbsp;</span></p>
 
 </div>
 
+### Codigo Refactorizado
 
 
 ```php
