@@ -4,9 +4,9 @@
 
 ### Desarrollo de codigo
 
-La aplicación se creó con en PHP 7.0.2  y Laravel 5.4; se utilizó bootstrap y jQuery en la vista y la
-base de datos utilizada fue MySql, aunque la prueba pudo hacerse realizado sin el uso de base de datos
-se creo un tabla para el almacenamiento de la matriz.
+La aplicación se creó con en PHP 7.0.2 y Laravel 5.4; se utilizó bootstrap y jQuery en la vista, y la
+base de datos utilizada fue MySql, aunque la prueba pudo realizarse sin el uso de base de datos
+se creó una tabla para el almacenamiento de la matriz.
 
 La aplicación tiene las 3 capas del modelo vista controlador.
 
@@ -19,7 +19,7 @@ javascript – jQuery y los request Ajax.
 El controlador se encuentra en la carpeta “app/Http/Controllers/CubeController.php” aca se reciben las operaciones de la
 vista, para la prueba se creó el get de la página y la respuesta a la petición
 Ajax de los resultados. Otra parte de la lógica de negocio se encuentra en la
-clase Query.php  en la carpeta “app/Util” cuya responsabilidad es hacer las
+clase Query.php ubicada en la carpeta “app/Util” cuya responsabilidad es hacer las
 consultas en base de datos y realizar los cálculos.
 
 El modelo es una sola tabla representada con la clase "Cube.php"
