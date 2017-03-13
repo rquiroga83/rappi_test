@@ -48,8 +48,7 @@ style='text-decoration:none'>https://github.com/rquiroga83/rappi_test</span></sp
 
 <p class=MsoNormal><span class=fontstyle01><span lang=ES>&nbsp;</span></span></p>
 
-<p class=MsoNormal><span class=fontstyle01><b><span lang=ES>Ejemplo de
-funcionamiento comparado con el test de la página hackerrank:</span></b></span></p>
+### Ejemplo de funcionamiento comparado con el test de la página hackerrank:
 
 <p class=MsoNormal><span class=fontstyle01><span lang=ES>Test de la página
 hackerrank</span></span></p>
@@ -99,12 +98,8 @@ x, y , z son almacenadas como x-1, y-1 y z-1:</span></p>
 width=384 height=265 id="Imagen 9"
 src="imagenes/image008.png"></p>
 
-<p class=MsoNormal><span lang=ES>&nbsp;</span></p>
 
-<p class=MsoNormal><span lang=ES>&nbsp;</span></p>
-
-<p class=MsoNormal><span class=fontstyle01><b><span lang=ES>Respuesta a
-preguntas</span></b></span></p>
+### Respuesta a preguntas
 
 <p class=MsoNormal><span lang=ES style='font-family:"Corbel","sans-serif";
 color:black'><br>
@@ -137,11 +132,9 @@ fallos sean fácilmente localizables.</span></span></p>
 <p class=MsoNormal style='text-align:justify'><span class=fontstyle01><span
 lang=ES>&nbsp;</span></span></p>
 
-<p class=MsoNormal style='text-align:justify'><span class=fontstyle01><b><span
-lang=ES>Problemas con el código</span></b></span></p>
+### Identificacion de problemas con el código
 
-<p class=MsoNormal style='text-align:justify'><span class=fontstyle01><span
-lang=ES>En el código se encuentran los siguientes problemas.</span></span></p>
+#### En el código se encuentran los siguientes problemas.
 
 <p class=MsoNormal style='text-align:justify'><span class=fontstyle01><span
 lang=ES>La entidad $servicio es cargada múltiples veces desde base de datos solo
@@ -167,8 +160,7 @@ en el seguimiento del código.</span></span></p>
 <p class=MsoNormal style='text-align:justify'><span class=fontstyle01><span
 lang=ES>La variable “$return” nunca es utilizada</span></span></p>
 
-<p class=MsoNormal style='text-align:justify'><span class=fontstyle01><b><span
-lang=ES>Para solucionar los problemas se implementaron las siguientes correcciones:</span></b></span></p>
+#### Para solucionar los problemas se implementaron las siguientes correcciones:
 
 <p class=MsoNormal style='text-align:justify'><span class=fontstyle01><span
 lang=ES>Se realizó la carga de la entidad Servicio en un solo lugar</span></span></p>
