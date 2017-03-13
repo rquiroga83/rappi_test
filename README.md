@@ -75,26 +75,26 @@ hackerrank</span></span></p>
 <p class=MsoNormal><span style='font-size:10.5pt;line-height:115%;background:
 #FAFAFA'><img border=0 width=130 height=183 id="Imagen 3"
 src="imagenes/image001.png"><img border=0 width=148
-height=164 id="Imagen 4" src="Prueba%20técnica%20Rappi_archivos/image002.png"></span></p>
+height=164 id="Imagen 4" src="imagenes/image002.png"></span></p>
 
 <p class=MsoNormal align=center style='text-align:center'><img border=0
 width=385 height=426 id="Imagen 1"
-src="Prueba%20técnica%20Rappi_archivos/image003.png"></p>
+src="imagenes/image003.png"></p>
 
 <p class=MsoNormal align=center style='text-align:center'><u><span lang=ES><span
  style='text-decoration:none'>&nbsp;</span></span></u></p>
 
 <p class=MsoNormal align=center style='text-align:center'><u><img border=0
 width=398 height=447 id="Imagen 5"
-src="Prueba%20técnica%20Rappi_archivos/image004.png"></u></p>
+src="imagenes/image004.png"></u></p>
 
 <p class=MsoNormal align=center style='text-align:center'><u><img border=0
 width=399 height=541 id="Imagen 6"
-src="Prueba%20técnica%20Rappi_archivos/image005.png"></u></p>
+src="imagenes/image005.png"></u></p>
 
 <p class=MsoNormal align=center style='text-align:center'><u><img border=0
 width=389 height=423 id="Imagen 7"
-src="Prueba%20técnica%20Rappi_archivos/image006.png"></u></p>
+src="imagenes/image006.png"></u></p>
 
 <p class=MsoNormal align=center style='text-align:center'><u><span lang=ES><span
  style='text-decoration:none'>&nbsp;</span></span></u></p>
@@ -105,7 +105,7 @@ src="Prueba%20técnica%20Rappi_archivos/image006.png"></u></p>
 
 <p class=MsoNormal align=center style='text-align:center'><img border=0
 width=391 height=542 id="Imagen 8"
-src="Prueba%20técnica%20Rappi_archivos/image007.png"></p>
+src="imagenes/image007.png"></p>
 
 <p class=MsoNormal><span lang=ES>Esta última prueba quedo en base de datos como
 sigue;  los valores de la matriz están desde cero es decir que las posiciones
