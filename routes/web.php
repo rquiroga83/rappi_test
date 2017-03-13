@@ -23,7 +23,7 @@ Route::get('cube/', [
 ]);
 
 
-Route::get('cube_result/', [
+Route::get('cube_result/{tabla_op}/{N}/{M}', [
 	'uses' => 'CubeController@getResult',
    	'as' => 'cube.result'
 ]);

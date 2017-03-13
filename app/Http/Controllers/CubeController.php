@@ -13,13 +13,14 @@ class CubeController extends Controller
     }
     
     
-    public function getResult(Request $req, $tabla_op) {
+    public function getResult(Request $req, $tabla_op, $N, $M) {
         
         if($req->ajax()){
-            // Completa la fecha en un string con mes dia hora para adaptarse a la funcion get_series_localidades
+            // Calcula los resultados con los valores de entrada
             $query_result = new Query();
-
-            return response()->json($query_result);
+            $m_tabla_op = json_decode($tabla_op);
+            
+            return response()->json($query_result->calculaResult($m_tabla_op, $N, $M));
         }
     }
     

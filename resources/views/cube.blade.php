@@ -89,6 +89,10 @@
                     <button id="button_Enviar" class="btn btn-primary" type="button"/>ENVIAR</button>
                 </li>
                 
+                <li id="resultados" class="list-group-item">
+                    
+                </li>
+                
             </div>
         </div>
         

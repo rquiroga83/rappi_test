@@ -26,6 +26,10 @@ function insertOp(orepation, value){
     
     var tableRowCount = $('#t_lista_operaciones tbody tr').length;
     
+    if(tableRowCount == M){
+        alert( "No es posible hacer mas operaciones" );
+        return false;
+    }
     
     // Adiciona valores a la tabla
     lista_operaciones.add({
@@ -36,6 +40,15 @@ function insertOp(orepation, value){
 }
 
 $( "#button_Enviar" ).click(function() {
+    
+    N = parseInt($( "#label_N" ).text());
+    M = parseInt($( "#label_M" ).text());
+    
+    if (N == 0 || M == 0){
+        alert( "Por favor establezca los valores de N y M" );
+        return false;
+    }
+    
     var tableRowCount = $('#t_lista_operaciones tbody tr').length;
     
     if(tableRowCount =0 ){
@@ -54,16 +67,27 @@ $( "#button_Enviar" ).click(function() {
         });  
     });
     
-    var operaciones_json = JSON.stringify( operaciones );
-    
-    
-    // peticion ajax grafica
-    $.get(`/rappi_test/public/cube_result/${operaciones_json}}` , function(response, state){
+    var operaciones_json = JSON.stringify( operaciones );  
+    console.log(operaciones_json);
+    // peticion ajax 
+    $.get(`/rappi_test/public/cube_result/${operaciones_json}/${N}/${M}}` , function(response, state){
         // Adiciona variables de la respuesta
         var data = JSON.stringify(response);
         console.log(data); 
         
-
+        
+        $("#resultados h1").remove();
+        $("#resultados li").remove();
+        
+        
+        var str_out = '<h1>Respuestas</h1>';
+        response.forEach(function (value, index){
+            str_out = str_out + `<li>${value}<\/li>`;
+        });
+        
+        console.log(str_out); 
+        
+        $('#resultados').append(str_out);
     });
     
 });
@@ -72,6 +96,13 @@ $( "#button_Enviar" ).click(function() {
 $( "#button_Update" ).click(function() {
     value = $( "#input_Op" ).val();
     if(!validate_op(value)){
+        $( "#input_Op" ).val(null);
+        return false;
+    }
+    
+    var vect = value.split(" ");
+    if(vect.length != 4) {
+        alert( "Formato invalido para update" );
         $( "#input_Op" ).val(null);
         return false;
     }
@@ -87,6 +118,12 @@ $( "#button_Query" ).click(function() {
         return false;
     }
     
+    var vect = value.split(" ");
+    if(vect.length != 6) {
+        alert( "Formato invalido para query" );
+        $( "#input_Op" ).val(null);
+        return false;
+    }
     
     insertOp('QUERY', value);
 });
