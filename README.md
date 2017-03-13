@@ -1,15 +1,4 @@
-<html>
 
-<head>
-<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
-<meta name=Generator content="Microsoft Word 14 (filtered)">
-<style>
-
-</style>
-
-</head>
-
-<body lang=ES-CO link=blue vlink=purple>
 
 <div class=WordSection1>
 
@@ -27,7 +16,7 @@ las 3 capas del modelo vista controlador  </span></span></p>
 lang=ES>La única vista existente esta creada en la carpeta “resources/view” el
 archivo se llama cube.blade.php y es una vista de laravel con el motor de
 platillas blade, para el soporte de las operaciones de la vista se creó el
-archivo “public/js/rappi_test.js” el cuan contiene todas las operaciones en
+archivo “public/js/rappi_test.js” la cual contiene todas las operaciones en
 javascript – jQuery y los request Ajax</span></span></p>
 
 <p class=MsoNormal style='text-align:justify'><span class=fontstyle01><span
@@ -224,6 +213,49 @@ lang=ES>&nbsp;</span></span></p>
 
 </div>
 
-</body>
+public function post_confirm(){
+    $id = Input::get('service_id');
+    $servicio = Service::find($id);
+    //dd($Servicio);
+    if ($servicio != NULL){
+        if  ($servicio->status_id == '6'){
+            return Response::json(array('error' => '2'));
+        }
+        if ($servicio->driver_id == NULL && $servicio->status_id == '1'){
 
-</html>
+            $driver_id = Input::get('driver_id');
+
+            Driver::update($driver_id, array(
+                'available' => '0'
+            ));
+            $driverTmp = Driver::find($driver_id);
+            Service::update($id, array(
+                'driver_id' => $driver_id,
+                'status_id' => '2',
+                'car_id'=>$driverTmp->car_id
+                //Up Carro
+                //,'pwd' => md5(Input::get('pwd'))
+            ));
+            //Notificar a usuario!!
+            $pushMessage = 'Tu servicio ha sido confirmado!';
+
+            $push = Push::make();
+            if ($servicio->user->uuid != ''){
+                if($servicio->user->type == '1'){//iPhone
+                    $result = $push->ios($servicio->user->uuid, $pushMessage, 1, 'honk.wav','Open', array('service_id'=>$servicio->id));
+                } else{
+                    $result = $push->android2($servicio->user->uuid, $pushMessage, 1, 'default','Open', array('service_id'=>$servicio->id));
+                }
+            }
+            return Response::json(array('error'=>'0'));
+        }else{
+            return Response::json(array('error'=>'1'));
+        }
+    }else{
+        return Response::json(array('error'=>'3'));
+    }
+}
+
+```php
+
+```
