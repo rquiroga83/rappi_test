@@ -1,6 +1,6 @@
 
 
-#### Prueba técnica Rappi – Andrés Quiroga
+
 
 ### Desarrollo de codigo
 
@@ -132,101 +132,3 @@ fallos sean fácilmente localizables.</span></span></p>
 <p class=MsoNormal style='text-align:justify'><span class=fontstyle01><span
 lang=ES>&nbsp;</span></span></p>
 
-### Identificacion de problemas con el código
-
-#### En el código se encuentran los siguientes problemas.
-
-<p class=MsoNormal style='text-align:justify'><span class=fontstyle01><span
-lang=ES>La entidad "$servicio" es cargada múltiples veces desde base de datos solo
-es necesario cargarla una vez.</span></span></p>
-
-<p class=MsoNormal style='text-align:justify'><span class=fontstyle01><span
-lang=ES>Una situación similar a la anterior sucede con la variable “driver_id”
-la cual se trae multiples veces de request solo es necesario traerla una vez y
-luego utilizarla en donde se requiera.</span></span></p>
-
-<p class=MsoNormal style='text-align:justify'><span class=fontstyle01><span
-lang=ES>La línea “return Response::json(array('error'=&gt;'0'));” esta repetida
-lo que dificulta el seguimiento del error.</span></span></p>
-
-<p class=MsoNormal style='text-align:justify'><span class=fontstyle01><span
-lang=ES>La entidad "Service" se actualiza múltiples veces esto se puede colocar
-en una sola operación.</span></span></p>
-
-<p class=MsoNormal style='text-align:justify'><span class=fontstyle01><span
-lang=ES>La variable "$servicio" es sobrescrita por un update esto genera confusión
-en el seguimiento del código.</span></span></p>
-
-<p class=MsoNormal style='text-align:justify'><span class=fontstyle01><span
-lang=ES>La variable “$return” nunca es utilizada</span></span></p>
-
-#### Para solucionar los problemas se implementaron las siguientes correcciones:
-
-<p class=MsoNormal style='text-align:justify'><span class=fontstyle01><span
-lang=ES>Se realizó la carga de la entidad Servicio en un solo lugar</span></span></p>
-
-<p class=MsoNormal style='text-align:justify'><span class=fontstyle01><span
-lang=ES>Se eliminó la sobreescritura de la variable “$servicio” por el update.</span></span></p>
-
-<p class=MsoNormal style='text-align:justify'><span class=fontstyle01><span
-lang=ES>Se colocó la lectura de la variable “driver_id” en un solo lugar</span></span></p>
-
-<p class=MsoNormal style='text-align:justify'><span class=fontstyle01><span
-lang=ES>Se refactorizo el condicional para que solo fuera necesario colocar la línea
-“return Response::json(array('error'=&gt;'0'));” en un lugar.</span></span></p>
-
-<p class=MsoNormal style='text-align:justify'><span class=fontstyle01><span
-lang=ES>Se colocó la actualización de la entidad Service en un solo lugar.</span></span></p>
-
-<p class=MsoNormal style='text-align:justify'><span class=fontstyle01><span
-lang=ES>Se eliminó la variable “$return”</span></span></p>
-
-
-
-### Codigo Refactorizado
-
-
-```php
-public function post_confirm(){
-    $id = Input::get('service_id');
-    $servicio = Service::find($id);
-    //dd($Servicio);
-    if ($servicio != NULL){
-        if  ($servicio->status_id == '6'){
-            return Response::json(array('error' => '2'));
-        }
-        if ($servicio->driver_id == NULL && $servicio->status_id == '1'){
-
-            $driver_id = Input::get('driver_id');
-
-            Driver::update($driver_id, array(
-                'available' => '0'
-            ));
-            $driverTmp = Driver::find($driver_id);
-            Service::update($id, array(
-                'driver_id' => $driver_id,
-                'status_id' => '2',
-                'car_id'=>$driverTmp->car_id
-                //Up Carro
-                //,'pwd' => md5(Input::get('pwd'))
-            ));
-            //Notificar a usuario!!
-            $pushMessage = 'Tu servicio ha sido confirmado!';
-
-            $push = Push::make();
-            if ($servicio->user->uuid != ''){
-                if($servicio->user->type == '1'){//iPhone
-                    $result = $push->ios($servicio->user->uuid, $pushMessage, 1, 'honk.wav','Open', array('service_id'=>$servicio->id));
-                } else{
-                    $result = $push->android2($servicio->user->uuid, $pushMessage, 1, 'default','Open', array('service_id'=>$servicio->id));
-                }
-            }
-            return Response::json(array('error'=>'0'));
-        }else{
-            return Response::json(array('error'=>'1'));
-        }
-    }else{
-        return Response::json(array('error'=>'3'));
-    }
-}
-```
