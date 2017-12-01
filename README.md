@@ -99,36 +99,3 @@ width=384 height=265 id="Imagen 9"
 src="imagenes/image008.png"></p>
 
 
-### Respuesta a preguntas
-
-<p class=MsoNormal><span lang=ES style='font-family:"Corbel","sans-serif";
-color:black'><br>
-<span class=fontstyle01>1. ¿En qué consiste el principio de responsabilidad
-única? ¿Cuál es su propósito?</span></span></p>
-
-<p class=MsoNormal style='text-align:justify'><span class=fontstyle01><span
-lang=ES>El principio de responsabilidad única consiste es que cada clase debe
-tener solamente una única responsabilidad en una funcionalidad de tal manera
-que si la funcionalidad falla sea solo esa clase la que se deba modificar.</span></span></p>
-
-<p class=MsoNormal style='text-align:justify'><span class=fontstyle01><span
-lang=ES>Un ejemplo podría ser cuando tenemos una funcionalidad que coloca
-mensajes automáticamente en twitter desde diferentes fuentes, el principio de
-responsabilidad única indicaría que la lógica que twittea debe delegarse a una
-sola clase en toda la aplicación y no repetir la misma funcionalidad en las
-clases que generan los mensajes.</span></span></p>
-
-<p class=MsoNormal><span lang=ES style='font-family:"Corbel","sans-serif";
-color:black'><br>
-<span class=fontstyle01>2. ¿Qué características tiene según tu opinión “buen”
-código o código limpio?</span></span></p>
-
-<p class=MsoNormal style='text-align:justify'><span class=fontstyle01><span
-lang=ES>A mi parecer las principales característica de un código limpio son la documentación,
-el evitar la escritura de métodos extensos, evitar la escritura de métodos no
-necesarios y tratar al máximo de reutilizar las funcionalidades para que los
-fallos sean fácilmente localizables.</span></span></p>
-
-<p class=MsoNormal style='text-align:justify'><span class=fontstyle01><span
-lang=ES>&nbsp;</span></span></p>
-
